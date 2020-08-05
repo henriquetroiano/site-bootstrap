@@ -1,0 +1,51 @@
+:root {
+  --brown-text: #5f3a15;
+  --common-green: #079139;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Reset CSS *** PS - I will not reset all values because I'm using Bootstrap! */
+* {
+  font-family: Rubik, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* changing navbar max-width */
+nav.navbar > div.container-fluid {
+  max-width: 80%;
+}
+
+nav.navbar > div.container-fluid > div#navbarSupportedContent {
+  min-width: 60%;
+  max-width: 60%;
+}
+
+/* setting the top distance for content */
+div.container-fluid#general-container {
+  margin-top: 100px;
+}
+
+/* navbar personalized settings */
+
+#btn-success {
+  color: var(--common-green);
+  border: 2px solid var(--common-green);
+}
+
+#btn-success:hover {
+  color: #fff;
+  background-color: var(--common-green);
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link {
+  color: var(--brown-text);
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+ul.navbar-nav > li.nav-item > a.nav-link:hover {
+  background-color: #bebdbd;
+  border-radius: 8px;
+  color: #fff;
+}
