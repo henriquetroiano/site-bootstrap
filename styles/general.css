@@ -22,9 +22,9 @@ nav.navbar > div.container-fluid > div#navbarSupportedContent {
 }
 
 /* setting the top distance for content */
-div.container-fluid#general-container {
+/* div.container-fluid#general-container {
   margin-top: 100px;
-}
+} */
 
 /* navbar personalized settings */
 
@@ -48,4 +48,8 @@ ul.navbar-nav > li.nav-item > a.nav-link:hover {
   background-color: #bebdbd;
   border-radius: 8px;
   color: #fff;
+}
+
+div#general-container > .row > img {
+  filter: sepia(15%);
 }
