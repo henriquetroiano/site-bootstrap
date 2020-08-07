@@ -50,6 +50,109 @@ ul.navbar-nav > li.nav-item > a.nav-link:hover {
   color: #fff;
 }
 
-div#general-container > .row > img {
-  filter: sepia(15%);
+div#general-container > div.row#home {
+  display: inline-block;
+  position: relative;
+}
+
+div#general-container > .row#home > img {
+  /* z-index: 1; */
+  filter: saturate(2.5) brightness(0.6);
+}
+
+div#general-container > div.row#home > section {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  height: max-content;
+  margin: auto 10%;
+  width: 80%;
+}
+
+div#general-container > div.row#home > section > h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+div#general-container > div.row#home > section > button {
+  margin-top: 2rem;
+}
+
+div#general-container > div.row#condominio {
+  /* background-color: blue; */
+}
+
+div#general-container > div.row#condominio > div#content {
+  /* background-color: red; */
+  width: 970px;
+  height: 630px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+div#general-container > div.row#condominio > div#content > div#title {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+div#general-container > div.row#condominio > div#content > div#title > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #dfb463;
+}
+
+div#general-container > div.row#condominio > div#content > div#title > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--common-green);
+}
+
+div#general-container > div.row#condominio > div#content > div#presentation {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+
+div#general-container
+  > div.row#condominio
+  > div#content
+  > div#presentation
+  > div {
+  margin: auto 0;
+  width: 45%;
+}
+
+div#general-container
+  > div.row#condominio
+  > div#content
+  > div#presentation
+  > iframe#video {
+  height: 276px;
+  width: 440px;
+  border-radius: 10px;
+}
+
+div#general-container > div.row#condominio > div#content > div#extra_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#general-container > div.row#condominio > div#content > div#extra_img > img {
+  width: 300px;
+}
+
+div#general-container
+  > div.row#condominio
+  > div#content
+  > div#extra_img
+  > img
+  + img {
+  margin-left: 35px;
 }

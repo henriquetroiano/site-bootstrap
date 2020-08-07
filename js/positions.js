@@ -6,21 +6,6 @@ export default function positioning() {
         
         // set main Div to be displayed under the navbar element as defauld
         content.style.marginTop = navbarHeight + "px";
-        setTimeout(function() {
-            console.log(navbarHeight)
-        }, .2)
-    
-        // const anchor = document.getElementById('target-a');
-        
-        //     anchor.addEventListener('click', function(event) { 
-        //         event.preventDefault();
-        //         const scrollTargetPosition = document.querySelector(anchor.hash).offsetTop;
-        //         window.scrollTo(0, scrollTargetPosition - navbarHeight);                
-        //     })
-        
-
-
-    
 
     const anchorButtons = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
     anchorButtons.forEach((a) => {
@@ -28,7 +13,7 @@ export default function positioning() {
             event.preventDefault();
 
             // on mobile devices, virtually click on menu button to hide the navbar extended after click in some anchor element
-            if(window.innerWidth <= 991) { // the width that bootstrap changes view to mobile
+            if(window.innerWidth <= 991) { // the width that bootstrap changes navbar to mobile
                 setTimeout(function() {
                     const menuButton = document.querySelector('span.navbar-toggler-icon');
                     menuButton.click();
