@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* changing navbar max-width */
 nav.navbar > div.container-fluid {
   max-width: 80%;
@@ -43,6 +47,8 @@ ul.navbar-nav > li.nav-item > a.nav-link {
   font-weight: 300;
   transition: 0.5s;
 }
+
+/* maximum size of width */
 
 ul.navbar-nav > li.nav-item > a.nav-link:hover {
   background-color: #bebdbd;
@@ -155,4 +161,142 @@ div#general-container
   > img
   + img {
   margin-left: 35px;
+}
+
+div#location {
+  position: relative;
+}
+
+div#location > img {
+  max-width: 100vw;
+  filter: saturate(1.5) brightness(0.2);
+}
+
+div#location > div#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10%;
+  width: 80%;
+}
+
+div#location > div#container > section#info > h2 {
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+div#location > div#container > section#info > h3 {
+  color: #ffff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+div#location > div#container > section#explanation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div#location > div#container > section#explanation > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+div#location > div#container > section#explanation > figure > img {
+  width: 100px;
+}
+
+div#location > div#container > section#explanation > figure > figcaption > h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffff;
+}
+
+div#location > div#container > section#explanation > figure > figcaption > p {
+  font-size: 1rem;
+  text-align: center;
+  width: max-content;
+  color: #ffff;
+}
+
+div#faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+div#faq > section#title-faq {
+  background-color: var(--common-green);
+  padding: 1rem;
+  width: 100vw;
+}
+
+div#faq > section#title-faq > h2 {
+  color: #ffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+div#faq > section#title-faq > h3 {
+  color: #ffff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+div#faq > section#content {
+  display: flex;
+  justify-content: space-between;
+  width: 970px;
+  align-self: center;
+}
+
+div#faq > section#content > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  height: 134px;
+}
+
+div#faq > section#content > figure > figcaption > h4 {
+  width: max-content;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--common-green);
+}
+
+div#faq > section#faq-container {
+  width: 770px;
+}
+
+div#faq > section#faq-container > h2 {
+  background-color: #dfb463;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+div#faq > section#faq-container > dl > dt {
+  border: 1px solid #dfb463;
+  width: 100%;
+  padding: 1rem;
 }
